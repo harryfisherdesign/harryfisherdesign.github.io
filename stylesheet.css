@@ -1,0 +1,295 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+@font-face {
+   font-family: Comfortaa;
+   src: url(fonts/comfortaa/Comfortaa-Light.ttf);
+   
+}
+
+html {
+overflow:hidden;	
+}
+
+body {
+  font-weight:lighter;
+  font-family: Comfortaa;
+  color: #FFF;
+  background-color: #7a9577;
+      position: fixed; 
+	  margin: 0;
+	  height:100%;
+	  width:100%;
+	
+}
+
+footer {
+	overflow:hidden;
+	position:absolute;
+	bottom:0px;
+	padding-left:2%;
+	z-index:1;
+	
+	
+}
+
+footer h3 {
+	display:inline-block;
+	font-size: 28px;
+	position:relative;
+}
+
+footer img {
+vertical-align:bottom;
+position:relative;
+}
+
+footer img:nth-child(3) {
+	vertical-align:middle;
+	text-align:center;
+}
+
+.introtitle {
+	margin-top:20%;
+	z-index:2;
+	
+}
+
+.text-center {
+  text-align: center;
+}
+
+.footermain {
+	width:100%;
+    position:absolute;
+	background-color:#93c84d;
+	z-index:3;
+	bottom:	-450px;
+}
+
+.footermain p {
+margin:25px;	
+}
+
+.navbar {
+	z-index:5;
+	top:0px; 
+	position:fixed;
+	width:100%;	
+	height:auto;
+}
+
+.navbar *{
+	background-color:#93c84d;
+	display:inline-block;
+	position:relative;
+	height:40px;
+	
+}
+
+.blogbutton {
+	top:-100px;
+	width:600px;
+	left:0px;
+	position:absolute;
+	text-align:center;
+}
+
+.blogbutton:hover {
+	background-color:#a3db4d;	
+	
+}
+
+.navbar h2 {
+	background-color:transparent;
+	line-height:0px;
+}
+
+
+
+.homebutton {
+	text-align:center;
+	top:-100px;
+	width:600px;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.homebutton:hover {
+	background-color:#a3db4d;	
+	
+}
+
+
+
+.searchgardensbutton {
+	top:-100px;
+	width:600px;
+	right:0px;
+	position:absolute;
+	text-align:center;
+}
+.searchgardensbutton:hover {
+	background-color:#a3db4d;	
+	
+}
+
+.homebutton a {
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-decoration: none; /* No underlines on the link */
+    z-index: 10; /* Places the link above everything else in the div */
+    background-color: #FFF; /* Fix to make div clickable in IE */
+    opacity: 0; /* Fix to make div clickable in IE */
+    filter: alpha(opacity=1); /* Fix to make div clickable in IE */
+}
+
+.searchgardensbutton a {
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-decoration: none; /* No underlines on the link */
+    z-index: 10; /* Places the link above everything else in the div */
+    background-color: #FFF; /* Fix to make div clickable in IE */
+    opacity: 0; /* Fix to make div clickable in IE */
+    filter: alpha(opacity=1); /* Fix to make div clickable in IE */
+}
+
+.blogbutton a {
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-decoration: none; /* No underlines on the link */
+    z-index: 10; /* Places the link above everything else in the div */
+    background-color: #FFF; /* Fix to make div clickable in IE */
+    opacity: 0; /* Fix to make div clickable in IE */
+    filter: alpha(opacity=1); /* Fix to make div clickable in IE */
+}
+
+.mainlogo {
+	z-index:4;
+	top:-220px;
+	position:absolute;
+	width:100%;
+}
+
+
+
+.loginbar {
+	z-index:5;
+	width:100%;
+	position:absolute;
+	top:-200px;
+	
+}
+
+
+.username {
+		display:inline-block;
+}
+
+.password {
+		display:inline-block;
+}
+
+.username input {
+	text-align:center;
+	height:30px;	
+	width:300px;
+	font-family:Comfortaa;
+	font-size:20px;
+	border:none;
+}
+
+.password input {
+	text-align:center;
+	height:30px;	
+	width:300px;
+	font-family:Comfortaa;
+	font-size:20px;
+	border:none;
+}
+
+.loginbuttonbar {
+	z-index:6;
+	width:100%;
+	position:absolute;
+	top:-200px;
+}
+
+.loginbutton {
+	background-color:#90a98c;
+	display:inline-block;
+	width:200px;
+	height:30px;
+	position:relative;
+}
+
+.loginbutton a {
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-decoration: none; /* No underlines on the link */
+    z-index: 10; /* Places the link above everything else in the div */
+    background-color: #FFF; /* Fix to make div clickable in IE */
+    opacity: 0; /* Fix to make div clickable in IE */
+    filter: alpha(opacity=1); /* Fix to make div clickable in IE */
+	
+}
+
+.loginbutton:hover {
+	background-color:#a3db4d;	
+	
+}
+
+
+.loginbutton p{
+	margin-top:5px;
+}
+
+.signupbutton p{
+	margin-top:5px;
+}
+
+
+.signupbutton {
+	background-color:#90a98c;
+	display:inline-block;
+	width:200px;	
+	height:30px;
+	position:relative;
+}
+
+.signupbutton a {
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-decoration: none; /* No underlines on the link */
+    z-index: 10; /* Places the link above everything else in the div */
+    background-color: #FFF; /* Fix to make div clickable in IE */
+    opacity: 0; /* Fix to make div clickable in IE */
+    filter: alpha(opacity=1); /* Fix to make div clickable in IE */
+	
+}
+
+.signupbutton:hover {
+	background-color:#a3db4d;	
+	
+}
+
+.wrapper {
+	
+}

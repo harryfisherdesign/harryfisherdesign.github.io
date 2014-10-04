@@ -1,0 +1,550 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+@font-face {
+   font-family: Comfortaa;
+   src: url(fonts/comfortaa/Comfortaa-Light.ttf);
+   
+}
+
+html {
+overflow:hidden;	
+}
+
+body {
+  font-weight:lighter;
+  font-family: Comfortaa;
+  color: #FFF;
+  background-color: #c9e3b5;
+      position: fixed; 
+	  margin: 0;
+	  height:100%;
+	  width:100%;
+	
+}
+
+.text-center {
+  text-align: center;
+}
+
+img.map, map area{
+    outline: none;
+}
+
+
+
+.footermain {
+	width:100%;
+    position:absolute;
+	background-color:#93c84d;
+	z-index:3;
+	bottom:	-150px;
+}
+.footerprofile {
+	width:100%;
+    position:absolute;
+	background-color:#93c84d;
+	z-index:6;
+	bottom:	-300px;
+	height:200px;
+}
+
+.livefeed {
+	z-index:3;	
+}
+
+.plantmenuwrap {
+    z-index: 7;
+    text-align: center;
+    bottom: 0px;
+    width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+}
+
+.mask {
+	z-index:10;
+	width:100%;
+    position:absolute;
+	background-color:#93c84d;
+	bottom:	-300px;
+	height:200px;
+}
+
+.pot {
+		z-index:11;
+	text-align:center;
+	position:absolute;
+	bottom:-290px;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	left: 0;
+right: 0;
+	
+}
+.dirt {
+	z-index:8;
+	text-align:center;
+	position:absolute;
+	bottom:-40px;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	left: 0;
+	right: 0;
+	
+}
+
+.optionplant{
+	z-index:9;
+	text-align:center;
+	position:absolute;
+	bottom:-450px;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	left: 0;
+	right: 0;
+	
+}
+
+
+.navbar {
+	z-index:5;
+	top:0px; 
+	position:fixed;
+	width:100%;	
+	height:auto;
+}
+
+.navbar *{
+	background-color:#93c84d;
+	display:inline-block;
+	position:relative;
+	height:40px;
+	
+}
+
+.blogbutton {
+	top:-100px;
+	width:600px;
+	left:0px;
+	position:absolute;
+	text-align:center;
+}
+
+.blogbutton:hover {
+	background-color:#a3db4d;	
+	
+}
+
+.navbar h2 {
+	background-color:transparent;
+		line-height:0px;
+}
+
+
+
+.homebutton {
+	text-align:center;
+	top:-100px;
+	width:600px;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.homebutton:hover {
+	background-color:#a3db4d;	
+	
+}
+
+.homebutton a {
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-decoration: none; /* No underlines on the link */
+    z-index: 10; /* Places the link above everything else in the div */
+    background-color: #FFF; /* Fix to make div clickable in IE */
+    opacity: 0; /* Fix to make div clickable in IE */
+    filter: alpha(opacity=1); /* Fix to make div clickable in IE */
+}
+
+.searchgardensbutton a {
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-decoration: none; /* No underlines on the link */
+    z-index: 10; /* Places the link above everything else in the div */
+    background-color: #FFF; /* Fix to make div clickable in IE */
+    opacity: 0; /* Fix to make div clickable in IE */
+    filter: alpha(opacity=1); /* Fix to make div clickable in IE */
+}
+
+.blogbutton a {
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-decoration: none; /* No underlines on the link */
+    z-index: 10; /* Places the link above everything else in the div */
+    background-color: #FFF; /* Fix to make div clickable in IE */
+    opacity: 0; /* Fix to make div clickable in IE */
+    filter: alpha(opacity=1); /* Fix to make div clickable in IE */
+}
+
+.searchgardensbutton {
+	top:-100px;
+	width:600px;
+	right:0px;
+	position:absolute;
+	text-align:center;
+	
+}
+.searchgardensbutton:hover {
+	background-color:#a3db4d;	
+	
+}
+
+
+
+.wrapper {
+	
+}
+
+.searchbar {
+	width:100%;
+	position:absolute;
+	top:-200px;
+	
+}
+
+.searchbar input {
+	z-index:7;
+	width:600px;	
+	height:90px;
+	text-align:center;
+	font-size:32px;
+	border:none;
+}
+
+.searchbuttonbar {
+	position:absolute;
+	width:100%;
+	top:-200px;	
+	height:50px;
+}
+
+.searchbutton {
+	text-align:center;
+	top:-100px;
+	width:200px;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:#90a98c;
+	height:40px;
+	line-height:35px;
+
+}
+
+.searchbutton:hover {
+	background-color:#a3db4d;
+		cursor:pointer;
+
+	}
+
+
+.growingtrees {
+	position:absolute;
+	width:100%;
+	text-align:center;
+	height:100px;
+	overflow:hidden;
+	top:300px;
+	
+}
+
+.hovertrees {
+	position:absolute;
+	width:100%;
+	text-align:center;
+	height:200px;
+	overflow:hidden;
+	top:210px;
+}
+
+.tumblrtree {
+	top:235px;
+	position:relative;
+	display:inline-block;
+	margin:85px;
+	
+}
+
+.facebooktree {
+	top:235px;
+	position:relative;
+	display:inline-block;
+	margin:85px;
+	
+}
+
+.twittertree {
+	top:235px;
+	position:relative;
+	display:inline-block;
+	margin:85px;
+	
+}
+
+
+
+.growingtrees img {
+	position:absolute;
+	top:300px;	
+}
+
+.growingtrees img:nth-child(2) {
+margin-left:200px;	
+}
+
+.growingtrees img:nth-child(3) {
+margin-left:-200px;	
+}
+
+
+.homebutton a {
+	z-index:100;	
+	
+}
+
+.linkbar {
+width:100%;
+text-align:center;
+	
+}
+.link1 {
+	position:relative;
+	display:inline-block;
+	top:-200px;
+	margin:80px;
+}
+
+.link1 a {
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-decoration: none; /* No underlines on the link */
+    z-index: 10; /* Places the link above everything else in the div */
+    background-color: #FFF; /* Fix to make div clickable in IE */
+    opacity: 0; /* Fix to make div clickable in IE */
+    filter: alpha(opacity=1); /* Fix to make div clickable in IE */
+}
+
+.link2 {
+	position:relative;
+	display:inline-block;
+	top:-200px;
+	margin:80px;
+}
+
+.link2 a {
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-decoration: none; /* No underlines on the link */
+    z-index: 10; /* Places the link above everything else in the div */
+    background-color: #FFF; /* Fix to make div clickable in IE */
+    opacity: 0; /* Fix to make div clickable in IE */
+    filter: alpha(opacity=1); /* Fix to make div clickable in IE */
+}
+
+.link3 {
+	position:relative;
+	display:inline-block;
+	top:-200px;
+	margin:80px;
+}
+
+.link3 a {
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-decoration: none; /* No underlines on the link */
+    z-index: 10; /* Places the link above everything else in the div */
+    background-color: #FFF; /* Fix to make div clickable in IE */
+    opacity: 0; /* Fix to make div clickable in IE */
+    filter: alpha(opacity=1); /* Fix to make div clickable in IE */
+}
+
+.signupbutton a {
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-decoration: none; /* No underlines on the link */
+    z-index: 10; /* Places the link above everything else in the div */
+    background-color: #FFF; /* Fix to make div clickable in IE */
+    opacity: 0; /* Fix to make div clickable in IE */
+    filter: alpha(opacity=1); /* Fix to make div clickable in IE */
+}
+
+.signupbutton:hover {
+		background-color:#a3db4d;
+}
+
+.subnavbar {
+	z-index:4;
+	top:40px; 
+	position:fixed;
+	width:100%;	
+	height:auto;
+}
+
+.subnavbar *{
+	background-color:#aed682;
+	display:inline-block;
+	position:relative;
+	height:40px;
+	
+}
+
+.subnavbar h2 {
+	background-color:transparent;
+		line-height:0px;
+		opacity:.5;
+}
+
+.progressionbutton {
+	top:-140px;
+	width:600px;
+	left:0px;
+	position:absolute;
+	text-align:center;
+}
+
+.progressionbutton:hover {
+	background-color:#a3db4d;
+	cursor:pointer;
+	
+	
+}
+
+
+.fullscreenbutton {
+	text-align:center;
+	top:-140px;
+	width:600px;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.fullscreenbutton:hover {
+	background-color:#a3db4d;
+	cursor:pointer;
+	
+}
+
+.adjustcamerabutton {
+	top:-100px;
+	width:600px;
+	right:0px;
+	position:absolute;
+	text-align:center;
+	
+}
+.adjustcamerabutton:hover {
+	background-color:#a3db4d;	
+	cursor:pointer;
+
+}
+
+.exitfullscreen {
+	z-index:8;
+	margin:20px;
+	top:-100px;	
+	position:absolute;
+	width:100%;
+
+}
+
+.exitfullscreen img {
+opacity:.3;	
+}
+
+.signuptree {
+position:absolute;
+left:10px;
+bottom:-800px;
+	
+}
+
+.signupbutton {
+	position:absolute;
+	width:200px;
+	height:50px;
+	background-color:#90a98c;
+	left:15%;
+	bottom:-15%;
+	
+}
+
+.signupbutton h2 {
+	text-align:center;
+	margin-top:10px;
+}
+
+.details {
+	left:15%;
+	position:absolute;
+	bottom:-35%;	
+	
+}
+
+.details input{
+	text-indent:10px;
+	height:30px;	
+	width:300px;
+	font-size:20px;
+	border:none;
+	margin-top:50px;	
+}
+
+.username input{
+	width:605px;
+}
+
+.firstname {
+	display:inline-block;
+}
+
+.lastname {
+	display:inline-block;
+}
+.email input{
+	width:605px;
+}
+
+.password input{
+	width:605px;
+}
