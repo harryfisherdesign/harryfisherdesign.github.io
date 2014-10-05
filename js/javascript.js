@@ -52,6 +52,17 @@ $('.footermain img').click(function(event) {
 		return false;
 });
 
+
+$('.loginbutton').click(function(){
+	FB.login(function(response) {
+		
+		console.log(response);
+		
+	},{scope: 'publish_actions'});
+	
+});
+
+
 });
 
 

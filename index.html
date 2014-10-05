@@ -16,13 +16,32 @@
 <body>
 
 <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&appId=851906188155072&version=v2.0";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+
+
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="js/javascript.js"></script>
+<script src="js/jquery.animate-colors.js"></script>
+
+<script>
+
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '851906188155072',
+      xfbml      : true,
+      version    : 'v2.1'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+
+
+</script>
 
 <div class="wrapper">
 
@@ -89,7 +108,7 @@
 <div class="loginbuttonbar">
 	<div class="text-center">
         <div class='signupbutton'>
-        	<p>Sign Up</p>
+        	<p>Sign Up With Facebook</p>
             <a href="signup.html"></a>
        	</div>
     	<div class='loginbutton'>
@@ -103,9 +122,5 @@
 
 </div>
 
-	
-<script src="http://code.jquery.com/jquery-latest.js"></script>
-<script src="js/javascript.js"></script>
-<script src="js/jquery.animate-colors.js"></script>
 </body>
 </html>
