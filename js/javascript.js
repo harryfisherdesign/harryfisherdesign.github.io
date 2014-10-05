@@ -62,7 +62,7 @@ FB.getLoginStatus(function(response) {
     // request, and the time the access token 
     // and signed request each expire
 	
-	location.href = 'http://www.harryfisherdesign.github.io/yourgarden';
+	window.location.replace("http://www.harryfisherdesign.github.io/yourgarden");
 	
     var uid = response.authResponse.userID;
     var accessToken = response.authResponse.accessToken;
