@@ -62,19 +62,14 @@ FB.getLoginStatus(function(response) {
     // request, and the time the access token 
     // and signed request each expire
 	
-	location.href = 'http://www.harryfisherdesign.github.io';
+	location.href = 'http://www.harryfisherdesign.github.io/yourgarden';
 	
     var uid = response.authResponse.userID;
     var accessToken = response.authResponse.accessToken;
   } else if (response.status === 'not_authorized') {
-    	
-		FB.login(function(response) {
-	},{scope: 'publish_actions'});
+    // the user is logged in to Facebook, 
+    // but has not authenticated your app
   } else {
-	  
-	  	FB.login(function(response) {
-		
-	},{scope: 'publish_actions'});
     // the user isn't logged in to Facebook.
   }
  });
@@ -83,6 +78,8 @@ FB.getLoginStatus(function(response) {
 
 $('.loginbutton').click(function(){
 	FB.login(function(response) {
+		
+		console.log(response);
 		
 	},{scope: 'publish_actions'});
 	
