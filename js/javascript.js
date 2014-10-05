@@ -53,14 +53,43 @@ $('.footermain img').click(function(event) {
 });
 
 
+
+FB.getLoginStatus(function(response) {
+  if (response.status === 'connected') {
+    // the user is logged in and has authenticated your
+    // app, and response.authResponse supplies
+    // the user's ID, a valid access token, a signed
+    // request, and the time the access token 
+    // and signed request each expire
+	
+	location.href = 'http://www.harryfisherdesign.github.io';
+	
+    var uid = response.authResponse.userID;
+    var accessToken = response.authResponse.accessToken;
+  } else if (response.status === 'not_authorized') {
+    	
+		FB.login(function(response) {
+	},{scope: 'publish_actions'});
+  } else {
+	  
+	  	FB.login(function(response) {
+		
+	},{scope: 'publish_actions'});
+    // the user isn't logged in to Facebook.
+  }
+ });
+
+
+
 $('.loginbutton').click(function(){
 	FB.login(function(response) {
-		
-		console.log(response);
 		
 	},{scope: 'publish_actions'});
 	
 });
+
+
+
 
 
 });
