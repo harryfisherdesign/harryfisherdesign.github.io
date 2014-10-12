@@ -70,6 +70,10 @@ function signinCallback(authResult) {
 }
 
 
+var host = "harryfisherdesign.github.io";
+if ((host == window.location.host) && (window.location.protocol != "https:"))
+    window.location.protocol = "https";
+
 });
 
 
