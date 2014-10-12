@@ -29,7 +29,7 @@ $('.adjustcamerabutton').delay(375).animate({top: '0px'},500)
 $('.homebutton').delay(150).animate({top: '0px'},500)
 $('.fullscreenbutton').delay(225).animate({top: '0px'},500)
 $('.pot').delay(500).animate({bottom: '0px'},500)
-$('.dirt').delay(500).animate({bottom: '250px'},500)
+$('.dirt').delay(500).animate({bottom: '248px'},500)
 $('.optionplant').delay(550).animate({bottom: '-50px'},1000)
 
 
@@ -144,33 +144,6 @@ $('.link3').hover(function(event) {
 	}
 		return false;
 });
-
-
-var tag = document.createElement('script');
-
-      tag.src = "https://www.youtube.com/iframe_api";
-      var firstScriptTag = document.getElementsByTagName('script')[0];
-      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-      // 3. This function creates an <iframe> (and YouTube player)
-      //    after the API code downloads.
-      var player;
-      function onYouTubeIframeAPIReady() {
-        player = new YT.Player('player', {
-          height: '390',
-          width: '640',
-          videoId: 'oXWMt4vkQ80',
-          events: {
-            'onReady': onPlayerReady,
-            'onStateChange': onPlayerStateChange
-          }
-        });
-      }
-
-      // 4. The API will call this function when the video player is ready.
-      function onPlayerReady(event) {
-        event.target.playVideo();
-      }
 
 });
 

@@ -50,9 +50,6 @@ img.map, map area{
 	height:200px;
 }
 
-.livefeed {
-	z-index:3;	
-}
 
 .plantmenuwrap {
     z-index: 7;
@@ -549,11 +546,11 @@ bottom:-800px;
 	width:605px;
 }
 
-.youtubeIframeAPI {
-	z-index:-100;
-	width:100%;
-	height:100%;	
-	position: absolute;
-	top: 0; 
-	left: 0;
+
+
+.player {
+position: fixed; 
+z-index: -99; 
+width: 100%; 
+height: 100%;
 }
