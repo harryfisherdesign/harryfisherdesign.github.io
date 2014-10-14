@@ -53,9 +53,9 @@ Channel Title: {$YouTubeLive->channel_title}<br><br>
 
 EOT;
 
-	// $YouTubeLive->setEmbedSizeByWidth(200);
-	// $YouTubeLive->setEmbedSizeByHeight(200);
-	// $YouTubeLive->embed_autoplay = false;
+	$YouTubeLive->setEmbedSizeByWidth(200);
+	$YouTubeLive->setEmbedSizeByHeight(200);
+	//  $YouTubeLive->embed_autoplay = false;
 
 	echo $YouTubeLive->embedCode();
 }
