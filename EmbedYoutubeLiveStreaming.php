@@ -53,8 +53,13 @@ class EmbedYoutubeLiveStreaming
 
 		$this->getAddress = "https://www.googleapis.com/youtube/v3/search?";
 
+<<<<<<< HEAD
 		$this->default_embed_width = "1920";
 		$this->default_embed_height = "1080";
+=======
+		$this->default_embed_width = "560";
+		$this->default_embed_height = "315";
+>>>>>>> origin/master
 		$this->default_ratio = $this->default_embed_width / $this->default_embed_height;
 
 		$this->embed_width = $this->default_embed_width;
