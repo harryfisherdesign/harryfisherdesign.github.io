@@ -25,7 +25,7 @@
 require_once('EmbedYoutubeLiveStreaming.php');
 
 $channelId = "UCtwBscm57XmIHZH9fkGjt9Q";
-$api_key = "406577624934-lffvum8qghomp8b0d38ihv2u4igtfrdo.apps.googleusercontent.com";
+$api_key = "AIzaSyAsWJiO-LraoI-1A-hvw3HC2BPCZhescjM";
 
 $YouTubeLive = new EmbedYoutubeLiveStreaming($channelId,$api_key);
 
